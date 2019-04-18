@@ -1,0 +1,41 @@
+$mainColor : #79c00b;
+$designWidth : 640/10;
+
+.back{
+	a{
+		display: inline-block;
+		/* 不可复制*/
+        -webkit-touch-callout:none;
+        -webkit-user-select:none;
+        -khtml-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+	}
+	width: 100%;
+	height: 80rem/$designWidth;
+	line-height: 80rem/$designWidth;
+	box-shadow:2px 1px 5px #e6e6e6;
+	.backBtn{
+		float: left;
+		width: 19rem/$designWidth;
+		height: 80rem/$designWidth;
+		background: url('../../img/back.png') center no-repeat;
+		background-size: 100%;
+		margin: 0 20rem/$designWidth 0 25rem/$designWidth;
+	}
+	span{
+		float: left;
+		font-size: 26rem/$designWidth;
+		color: #111;
+		line-height: 85rem/$designWidth;
+	}
+}
+.agreement{
+	margin: 40rem/$designWidth 32rem/$designWidth 148rem/$designWidth;
+}
+h1{
+	font-size: 32rem/$designWidth;
+	color: #111;
+	line-height: 32rem/$designWidth;
+}

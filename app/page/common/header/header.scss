@@ -1,0 +1,79 @@
+$mainColor : #79c00b;
+$designWidth : 640/10;
+.header{
+	width: 100%;
+}
+.top{
+	height: 70rem/$designWidth;
+	padding:0 36rem/$designWidth;
+	overflow:hidden;
+	font-size: 22rem/$designWidth;
+	.logo{
+		float: left;
+		width: 155rem/$designWidth;
+		height: 70rem/$designWidth;
+		background: url('./img/logo.png') center no-repeat;
+		background-size: 100%;
+	}
+	.userMessage{
+		float: right;
+		.toLogin{
+			height: 70rem/$designWidth;
+			line-height: 70rem/$designWidth;
+
+			/* 不可复制*/
+			-webkit-touch-callout:none;
+			-webkit-user-select:none;
+			-khtml-user-select:none;
+			-moz-user-select:none;
+			-ms-user-select:none;
+			user-select:none;
+		}
+		.noLogin{
+			height: 70rem/$designWidth;
+			line-height: 70rem/$designWidth;
+		}
+		.quit{
+			padding-left:24rem/$designWidth;
+			
+			/* 不可复制*/
+			-webkit-touch-callout:none;
+			-webkit-user-select:none;
+			-khtml-user-select:none;
+			-moz-user-select:none;
+			-ms-user-select:none;
+			user-select:none;
+		}
+	}
+}
+.nav{
+	height: 78rem/$designWidth;
+	li{
+		float: left;
+		height: 78rem/$designWidth;
+		line-height: 78rem/$designWidth;
+		margin:0 35rem/$designWidth;
+		font-size: 26rem/$designWidth;
+
+		/* 不可复制*/
+		-webkit-touch-callout:none;
+		-webkit-user-select:none;
+		-khtml-user-select:none;
+		-moz-user-select:none;
+		-ms-user-select:none;
+		user-select:none;
+	}
+	.curColor{
+		border-bottom: 1px solid $mainColor;
+		color: $mainColor;
+	}
+}
+.nocopy{
+	/* 不可复制*/
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}

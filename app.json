@@ -1,0 +1,29 @@
+{
+	"pageList":[
+		{
+			"title" : "鹏博士英语-登录",
+			"src" : "./app/page/login/main.js"
+		},{
+			"title" : "鹏博士英语-注册",
+			"src" : "./app/page/register/main.js"
+		},{
+			"title" : "鹏博士英语",
+			"src" : "./app/page/index/main.js"
+		},{
+			"title" : "鹏博士英语-了解更多",
+			"src" : "./app/page/aboutUs/main.js"
+		},{
+			"title" : "鹏博士英语-购买课程",
+			"src" : "./app/page/buyCourse/main.js"
+		},{
+			"title" : "鹏博士英语-服务协议",
+			"src" : "./app/page/agreement/main.js"
+		},{
+			"title" : "鹏博士英语-确认订单",
+			"src" : "./app/page/confirmOrder/main.js"
+		},{
+			"title" : "鹏博士英语-备注信息",
+			"src" : "./app/page/remark/main.js"
+		}
+	]
+}

@@ -1,0 +1,117 @@
+$mainColor : #79c00b;
+$designWidth : 640/10;
+.login{
+	width: 100%;
+	height: 342rem/$designWidth;
+	background: url('../../img/loginBg.png') no-repeat;
+	background-size: 100%;
+	position: relative;
+	img{
+		width: 344rem/$designWidth;
+		height: 70rem/$designWidth;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -172rem/$designWidth;
+		margin-top: -35rem/$designWidth;;
+	}
+}
+.userInput{
+	margin-top: 80rem/$designWidth;
+	.inputList{
+		height: 103rem/$designWidth;
+		border-bottom: 1px solid ;
+		padding: 0 30rem/$designWidth;
+		font-size: 24rem/$designWidth;
+		.sendTest{
+			border:0px;
+			background-color:transparent;
+			background-image:none;
+		}
+	}
+	input{
+		border: none;
+		line-height: 103rem/$designWidth;
+		color: #111;
+	}
+	.inputTest{
+		width: 400rem/$designWidth;
+	}
+	.inputMobile{
+		width: 100%;
+
+	}
+	.sendTest{
+		width: 180rem/$designWidth;
+		line-height: 103rem/$designWidth;
+		color: $mainColor;
+		text-align: right;
+		background: white;
+	}
+}
+.entryBtn{
+	margin-top: 70rem/$designWidth;
+	button{
+		display: block;
+		width: 514rem/$designWidth;
+		height: 79rem/$designWidth;
+		line-height: 79rem/$designWidth;
+		text-align: center;
+		border: 1rem/$designWidth solid $mainColor;
+		margin: 0 auto 22rem/$designWidth;
+		border-radius: 30rem/$designWidth;
+		font-size: 30rem/$designWidth;
+		letter-spacing: 12rem/$designWidth;
+		/* 不可复制*/
+		-webkit-touch-callout:none;
+		-webkit-user-select:none;
+		-khtml-user-select:none;
+		-moz-user-select:none;
+		-ms-user-select:none;
+		user-select:none;
+	}
+	.gotoBtn{
+		background: $mainColor;
+		color: white;
+	}
+	.registerBtn{
+		background: white;
+	}
+	.Reg-registerBtn{
+		background: $mainColor;
+	}
+}
+.back{
+	a{
+		display: inline-block;
+		/* 不可复制*/
+        -webkit-touch-callout:none;
+        -webkit-user-select:none;
+        -khtml-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+	}
+	width: 100%;
+	height: 80rem/$designWidth;
+	line-height: 80rem/$designWidth;
+	box-shadow:2px 1px 5px #e6e6e6;
+	.backBtn{
+		float: left;
+		width: 19rem/$designWidth;
+		height: 80rem/$designWidth;
+		background: url('../../img/back.png') center no-repeat;
+		background-size: 100%;
+		margin: 0 20rem/$designWidth 0 25rem/$designWidth;
+	}
+	span{
+		float: left;
+		font-size: 26rem/$designWidth;
+		color: #111;
+		line-height: 85rem/$designWidth;
+	}
+}
+
+.userRegisterInput{
+	margin-top: 10rem/$designWidth;
+}

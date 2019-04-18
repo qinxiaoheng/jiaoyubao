@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<% if (htmlWebpackPlugin.options.title) {%><title><%= htmlWebpackPlugin.options.title %></title><% } %> 
+<% if (!htmlWebpackPlugin.options.title) {%><title>页面标题</title><% } %> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0" />
+</head>
+<body>
+	<div class="tips" id="Tips"></div>
+
+<script type="text/javascript">
+
+var evt = "onorientationchange" in window ? "orientationchange" : "resize";
+    window.addEventListener(evt,resize,false);
+        function resize(fals) {
+            if(window.orientation == 0 || window.orientation == 180) {
+                    // alert("竖屏");
+                    document.getElementById('Tips').style.display = 'none'
+                }else {
+                    document.getElementById('Tips').style.display = 'block'
+                    document.getElementById('Tips').onclick = function(){
+                    	document.getElementById('Tips').style.display = 'none'
+                    }
+
+            }
+        }
+    resize(true);
+</script>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan style='display:none;' id='cnzz_stat_icon_1273934643'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1273934643' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

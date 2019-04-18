@@ -1,0 +1,92 @@
+$mainColor : #79c00b;
+$designWidth : 640/10;
+
+
+body,html{
+	background: #f6f6f6;
+}
+.back{
+	width: 100%;
+	height: 80rem/$designWidth;
+	background:white;
+	line-height: 80rem/$designWidth;
+	box-shadow:2px 1px 5px #e6e6e6;
+	a{
+		position: absolute;
+		top: 0;
+		left: 0;
+		/* 不可复制*/
+        -webkit-touch-callout:none;
+        -webkit-user-select:none;
+        -khtml-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+	}
+	.backBtn{
+		float: left;
+		width: 19rem/$designWidth;
+		height: 80rem/$designWidth;
+		background: url('../../img/back.png') center no-repeat;
+		background-size: 100%;
+		margin: 0 20rem/$designWidth 0 25rem/$designWidth;
+	}
+	span{
+		float: left;
+		font-size: 26rem/$designWidth;
+		color: #111;
+		line-height: 85rem/$designWidth;
+	}
+	.title{
+		text-align: center;
+		font-size: 30rem/$designWidth;
+		/* 不可复制*/
+        -webkit-touch-callout:none;
+        -webkit-user-select:none;
+        -khtml-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+	}
+	.confirm{
+		position: absolute;
+		top: 0;
+		right: 25rem/$designWidth;
+		font-size: 26rem/$designWidth;
+		color: #111;
+		
+		/* 不可复制*/
+		-webkit-touch-callout:none;
+		-webkit-user-select:none;
+		-khtml-user-select:none;
+		-moz-user-select:none;
+		-ms-user-select:none;
+		user-select:none;
+	}
+}
+.remarkBox{
+	width: 640rem/$designWidth;
+	height: 258rem/$designWidth;
+	margin-top: 16rem/$designWidth;
+	position: relative;
+	textarea{
+		width: 576rem/$designWidth;
+		height: 194rem/$designWidth;
+		border: none;
+		padding: 32rem/$designWidth;
+		font-size: 22rem/$designWidth;
+	}
+	.count{
+		position: absolute;
+		right:32rem/$designWidth;
+		bottom:25rem/$designWidth;
+		color: #c5c5c5;
+	}
+	.defaultShow{
+		position: absolute;
+		top:32rem/$designWidth;
+		left: 32rem/$designWidth;
+		font-size: 22rem/$designWidth;
+	}
+
+}

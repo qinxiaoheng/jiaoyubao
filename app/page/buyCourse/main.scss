@@ -1,0 +1,142 @@
+$mainColor : #79c00b;
+$designWidth : 640/10;
+.line{
+	height: 1px;
+	background: #f2f2f2;
+	box-shadow:2px 1px 5px #e6e6e6;
+}
+.tabBtn{
+	margin: 36rem/$designWidth 34rem/$designWidth 34rem/$designWidth;
+	overflow: hidden;
+	li{
+		float: left;
+		width: 138rem/$designWidth;
+		height: 52rem/$designWidth;
+		line-height: 52rem/$designWidth;
+		text-align: center;
+		margin-right: 50rem/$designWidth;
+		font-size: 22rem/$designWidth;
+		color: #5c5c5c;
+		border: 1rem/$designWidth solid #5c5c5c;
+		border-radius: 26rem/$designWidth;
+		
+		/* 不可复制*/
+		-webkit-touch-callout:none;
+		-webkit-user-select:none;
+		-khtml-user-select:none;
+		-moz-user-select:none;
+		-ms-user-select:none;
+		user-select:none;
+	}
+	.curTab{
+		font-size: 22rem/$designWidth;
+		background: $mainColor;
+		color: white;
+		border: 1rem/$designWidth solid $mainColor;
+	}
+}
+.structure{
+	margin: 0 34rem/$designWidth 32rem/$designWidth;
+	p{
+		font-size: 28rem/$designWidth;
+		line-height: 28rem/$designWidth;
+		color: #111;
+		margin-bottom: 12rem/$designWidth;
+	}
+	.structureInfo{
+		font-size: 22rem/$designWidth;
+		line-height: 30rem/$designWidth;
+		color: #5c5c5c;
+		letter-spacing:1rem/$designWidth;
+	}
+}
+/*课程列表*/
+.courseList{
+	li{
+		position: relative;
+		overflow:hidden;
+		border-top:1px solid #e2e2e2;
+		padding: 30rem/$designWidth 34rem/$designWidth;
+		img{
+			width: 141rem/$designWidth;
+			height: 192rem/$designWidth;
+			margin-right: 40rem/$designWidth;
+		}
+	}
+	.courseInfo{
+		font-size: 20rem/$designWidth;
+		line-height: 32rem/$designWidth;
+		color: #5c5c5c;
+		.title{
+			font-size: 28rem/$designWidth;
+			line-height: 26rem/$designWidth;
+			margin: 28rem/$designWidth 0;
+			color: #141a2d;
+		}
+	}
+	.buyBtn{
+		position: absolute;
+		right: 34rem/$designWidth;
+		bottom: 55rem/$designWidth;
+		width: 108rem/$designWidth;
+		height: 52rem/$designWidth;
+		line-height: 52rem/$designWidth;
+		background: $mainColor;
+		border-radius: 26rem/$designWidth;
+		font-size: 22rem/$designWidth;
+		text-align: center;
+		color: white;
+		border:none;
+		/* 不可复制*/
+		-webkit-touch-callout:none;
+		-webkit-user-select:none;
+		-khtml-user-select:none;
+		-moz-user-select:none;
+		-ms-user-select:none;
+		user-select:none;
+	}
+}
+.buySuccessMask{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left:0;
+	background-color: rgba(0,0,0,.6);
+	.buySuccessBox{
+		position: absolute;
+		width: 464rem/$designWidth;
+		height: 478rem/$designWidth;
+		top: 50%;
+		left:50%;
+		margin-top: -239rem/$designWidth;
+		margin-left: -232rem/$designWidth;
+		background: url('./img/buySuccess.png') no-repeat;
+		background-size: 100%;
+	}
+	.closeMask{
+		position: absolute;
+		width: 20rem/$designWidth;
+		height: 20rem/$designWidth;
+		background: url(./img/close.png) no-repeat;
+		background-size: 100%;
+		top: 25rem/$designWidth;
+		right: 25rem/$designWidth;
+	}
+	.tips1{
+		width: 100%;
+		color: #111;
+		font-size: 26rem/$designWidth;
+		position: absolute;
+		text-align: center;
+		bottom: 90rem/$designWidth;
+	}
+	.tips2{
+		width: 100%;
+		color: #5c5c5c;
+		font-size: 16rem/$designWidth;
+		position: absolute;
+		text-align: center;
+		bottom: 55rem/$designWidth;
+	}
+}

@@ -1,0 +1,12 @@
+{{#each result}}
+	<li>
+		<img  src="" class="left scroll-loading" data-src="{{imgUrl}}">
+		<div class="left courseInfo">
+			<h1 class="title">课程编号：{{uniqId}}</h1>
+			<div>课时：{{hours}}课时</div>
+			<div>有效期：{{duration}}</div>
+			<div>价格：<span style="color:red;">{{price}}</span>元</div>
+		</div>
+		<button class="buyBtn buy" Uniq={{uniqId}}>购买</button>
+	</li>
+{{/each}}

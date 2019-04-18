@@ -1,0 +1,222 @@
+$designWidth : 640/10;
+$mainColor : #79c00b;
+/*弹框背后的遮罩*/
+.mask {
+  width:100%;
+  height: 100%;
+  margin:0 auto;
+  /*position: absolute;*/
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+/*简单弹框*/
+.simpledialog {
+  /*position: absolute;*/
+  position: fixed;
+  z-index: 10001;
+  /*width: 520rem/$designWidth;
+  height:368rem/$designWidth;*/
+  width: 464rem/$designWidth;
+  height: 226rem/$designWidth;
+
+
+  border-radius:12rem/$designWidth;
+  background-color: #fff;
+  margin:0 auto;
+  color:#363636;
+  /*-moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -ms-boder-radius: 3px;*/
+}
+
+/*简单弹框内的带按钮的内层*/
+.buttondialog-word {
+  padding: 19rem/$designWidth 32rem/$designWidth 18rem/$designWidth;
+  text-align: center;
+  font-size: 26rem/$designWidth;
+  /*border-bottom: 1px solid #dcdcdc;*/
+  color: #333333;
+  word-break: normal;
+}
+.buttondialog-word p{
+  font-size:30rem/$designWidth;
+}
+.buttondialog-word .blueline{
+  display: inline-block;
+  width:411rem/$designWidth;
+  height:2rem/$designWidth;
+  background:#F3981C;
+  margin:0 auto;
+}
+.buttondialog-op {
+  /*display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: box;*/
+}
+.test{
+    margin-top: 12%;
+    font-size: 26rem/$designWidth;
+    color: #111;
+    /* 不可复制*/
+        -webkit-touch-callout:none;
+        -webkit-user-select:none;
+        -khtml-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+}
+.buttondialog-op button {
+  height: 53rem/$designWidth;
+  width:110rem/$designWidth;
+  margin:20rem/$designWidth auto 0;
+  line-height: 53rem/$designWidth;
+  color: white;
+  font-size: 22rem/$designWidth;
+  text-align: center;
+  display: block;
+  background:$mainColor;
+  border:none;
+  border-radius: 30rem/$designWidth;
+  letter-spacing: 3rem/$designWidth;
+  /*border-left: 1px solid #dcdcdc;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  -moz-box-flex: 1;
+  box-flex: 1;*/
+  /* 不可复制*/
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+/*弹出框*/
+.dialog-btn{ 
+  border: none;
+  float: left;
+  width: 40%!important;
+  margin-left: 7%!important;
+}
+.dialog-btn-cancle{
+  background: #179ff2!important;
+}
+.buttondialog-op button:first-child {
+  border-left: none;
+}
+
+/*提示浮层*/
+.tipdialog {
+  position: fixed;
+  z-index: 10001;
+  border-radius: 3rem/$designWidth;
+  background-color: rgba(0,0,0,0.5);
+  -moz-border-radius: 3rem/$designWidth;
+  -webkit-border-radius: 3rem/$designWidth;
+  -ms-boder-radius: 3rem/$designWidth;
+  transition: opacity 300ms linear;
+  -webkit-transition: opacity 300ms linear;
+}
+
+.tipdialog-content {
+  width: 280rem/$designWidth;
+  /*height: 30rem/$designWidth;*/
+  padding: 10rem/$designWidth 12rem/$designWidth;
+  font-size: 23rem/$designWidth;
+  text-align: center;
+  color: #ffffff;
+  line-height: 30rem/$designWidth;
+}
+
+.tipdialog-content .icon-tick {
+  color: #53c123;
+  vertical-align: -1rem/$designWidth;
+}
+
+.tipdialog-content .icon-cross {
+  color: red;
+  vertical-align: -1rem/$designWidth;
+}
+
+/*菜单弹框*/
+.menudialog {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.menudialog-group {
+  margin:10rem/$designWidth;
+  background-color: #ffffff;
+  border-radius: 3rem/$designWidth;
+  -moz-border-radius: 3rem/$designWidth;
+  -webkit-border-radius: 3rem/$designWidth;
+  -ms-boder-radius: 3rem/$designWidth;
+}
+
+.menudialog-item-html,
+.menudialog-item-button,
+.menudialog-item-cancel {
+  text-align: center;
+  border-top: 1rem/$designWidth solid #d2d2d2;
+}
+
+.menudialog-item-button,
+.menudialog-item-cancel {
+  font-size: 20rem/$designWidth;
+  padding: 11rem/$designWidth;
+}
+
+.menudialog-item-first {
+  border: none;
+}
+
+.menudialog-item-button {
+  color: #ff6900;
+}
+
+.menudialog-item-cancel {
+  color: #959595;
+}
+
+/*右上角关闭按钮的普通弹框*/
+.commondialog-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36rem/$designWidth;
+  height: 35rem/$designWidth;
+  z-index: 10;
+}
+
+.commondialog-close i {
+  margin: 15rem/$designWidth 0 0 10rem/$designWidth;
+  width: 11rem/$designWidth;
+  height: 10rem/$designWidth;
+  display: block;
+  font-size: 14rem/$designWidth;
+  color: #a0a0a0;
+  line-height: 10rem/$designWidth;
+  text-indent: -2rem/$designWidth;
+}
+
+.commondialog-content {/*设置一个简单统一的边距*/
+  padding: 15rem/$designWidth 20rem/$designWidth;
+}
+
+
+.close{
+  float: right;
+  width: 20rem/$designWidth;
+  height: 20rem/$designWidth;
+  background: url('../close.png') center no-repeat;
+  background-size: 100%;
+}
